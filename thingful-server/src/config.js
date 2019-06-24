@@ -1,5 +1,7 @@
 module.exports = {
 	PORT: process.env.PORT || 8000,
 	NODE_ENV: process.env.NODE_ENV || 'development',
-	DB_URL: process.env.DB_URL || 'postgresql://dunder-mifflin@localhost/thingful'
+	DB_URL:
+		process.env.DB_URL || 'postgresql://dunder-mifflin@localhost/thingful',
+	JWT_SECRET: process.env.JWT_SECRET || 'my-jwt-secret'
 };
